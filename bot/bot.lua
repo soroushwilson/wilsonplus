@@ -102,14 +102,14 @@ function create_config( )
     "Tools",
     "Write"
 	},
-    sudo_users = {259760855},
+    sudo_users = {140760293},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[» TelePlus v5.5
+    info_text = [[» wilsonPlus v5.5
 		
 		» Sudo BoT :
-		» @TelePlus_GPs
+		» soroush
 		
         
 		v5 https://github.com/shahradelahi/cli-bot.git
@@ -476,6 +476,6 @@ end
 		chat = data.chat_
 		chats[chat.id_] = chat
 	elseif (data.ID == "UpdateOption" and data.name_ == "my_id") then
-		tdcli_function ({ID="GetChats", offset_order_="9223372036854775807", offset_chat_id_=0, limit_=20}, dl_cb, nil)    
+		tdcli_function ({ID="GetChats", offset_order_="0", offset_chat_id_=0, limit_=20}, dl_cb, nil)    
 	end
 end
